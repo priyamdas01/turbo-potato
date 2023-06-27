@@ -1,13 +1,20 @@
+import React, {useEffect, useState, } from "react";
 import Header from "./Header";
-import SearchBar from "./SearchBar";
+
 import EmployeesContainer from "./EmployeesContainer";
 
 function App() {
+  const [emps, setEmps] = useState([]);
+  useEffect(()=>{
+    fetch("http://localhost:3000/employees")
+    .then((r) => r.json())
+    .then((data) => setEmps(data))
+  }, []);
+  
   return (
     <div className="App">
       <Header></Header>
-      <SearchBar></SearchBar>
-      <EmployeesContainer></EmployeesContainer>
+      <EmployeesContainer emps = {emps}></EmployeesContainer>
     </div>
   );
 }

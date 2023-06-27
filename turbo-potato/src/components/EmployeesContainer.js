@@ -1,11 +1,11 @@
 import Employee from "./Employee"
-function EmployeesContainer(){
-
+function EmployeesContainer({emps}){
+    console.log(emps);
+    const jsxEmps = emps.map(emp => <Employee key={emp.id} emp = {emp}></Employee>);
     return (
-        <>
-            <h1>I am the EmployeesContainer</h1>
-            <Employee></Employee>
-        </>
+        <div id = "emps-container">
+            {jsxEmps}
+        </div>
     );
 }
 

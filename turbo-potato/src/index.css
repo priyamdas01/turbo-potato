@@ -12,14 +12,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#emps-container{
+
+#emps-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 2rem;
 }
-#emp-card{
+
+#emp-card {
   text-align: center;
   border: 1px solid black;
   border-radius: 10px;
@@ -27,8 +29,15 @@ code {
   width: 100%;
   background: linear-gradient(to top, #d2d2d1 0%, #bab9b9 100%);
 }
-img{
-  max-height:100%; 
-  max-width:100%;
+
+img {
+  max-height: 100%;
+  max-width: 100%;
   object-fit: cover;
+}
+
+#deleteBtn {
+  color: red;
+  cursor: pointer;
+  font-weight: bolder;
 }

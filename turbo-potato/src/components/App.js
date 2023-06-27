@@ -14,10 +14,9 @@ function App() {
   }, []);
 
   function removeEmp(id) {
-    alert(id)
     const newList = emps.filter(l => l.id !== id)
     setEmps(newList);
-}
+  }
 
   return (
     <div className="App">

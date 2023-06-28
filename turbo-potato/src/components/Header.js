@@ -1,8 +1,8 @@
-function Header(){
+function Header() {
 
     return (
         <div>
-            Sort employees based on: 
+            Sort employees based on:
             <button>Age(junior to senior)</button>
             <button>Age(senior to junior)</button>
             {

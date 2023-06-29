@@ -4,7 +4,6 @@ import { Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import EmployeesContainer from "./EmployeesContainer";
 import Login from "./Login";
-import SearchBar from "./SearchBar";
 import EmployeeInfo from "./EmployeeInfo";
 import NewEmployee from "./NewEmployee";
 
@@ -18,29 +17,32 @@ function App() {
       .then((r) => r.json())
       .then((data) => setEmps(data))
   }, []);
-  function addNewEmployee(newEmployee){
-    setEmps((emps)=>[...emps, newEmployee])
+  function addNewEmployee(newEmployee) {
+    setEmps((emps) => [...emps, newEmployee])
   }
 
   function removeEmp(id) {
+
+    fetch(`http://localhost:3000/employees/${id}`, {
+      method: "DELETE",
+    })
+
     const newList = emps.filter(l => l.id !== id)
     setEmps(newList);
   }
-  function sortBy(sortedEmps){
+  function sortBy(sortedEmps) {
     console.log(sortedEmps);
     setEmps(sortedEmps);
-
-  } 
+  }
 
   return (
     <div className="App">
 
       <Switch>
         <Route exact path="/employees">
-          <Header emps = {emps} sortBy={sortBy}></Header>
-          {/* <SearchBar></SearchBar> */}
-          <NewEmployee addNewEmp = {addNewEmployee}></NewEmployee>
-          <EmployeesContainer emps = {emps} onRemoval={removeEmp}></EmployeesContainer> 
+          <Header emps={emps} sortBy={sortBy}></Header>
+          <NewEmployee addNewEmp={addNewEmployee}></NewEmployee>
+          <EmployeesContainer emps={emps} onRemoval={removeEmp}></EmployeesContainer>
         </Route>
         <Route exact path="/">
           <Login className="login-page"></Login>

@@ -19,7 +19,7 @@ function NewEmployee({addNewEmp}){
         dob,
         image,
         bio,
-        jdate,
+        "joining-date":jdate,
         address,
         email,
         mantra

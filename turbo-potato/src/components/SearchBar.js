@@ -1,9 +1,12 @@
-function SearchBar(){
+function SearchBar({ setSearch }) {
+
     return (
         <div>
-            <label>Search:</label>
-            <input type="text"></input>
-
+            <input
+                onChange={e => setSearch(e.target.value)}
+                type="text"
+                placeholder="Search"
+            />
         </div>
     )
 }

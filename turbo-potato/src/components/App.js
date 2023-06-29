@@ -1,4 +1,4 @@
-import React, {useEffect, useState, } from "react";
+import React, { useEffect, useState, } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Header from "./Header";
@@ -34,17 +34,22 @@ function App() {
   return (
     <div className="App">
 
-      <Switch> 
+      <Switch>
         <Route exact path="/employees">
+<<<<<<< HEAD
           <Header emps = {emps} sortByAge={sortByAge}></Header>
           <SearchBar></SearchBar>
           <NewEmployee addNewEmp = {addNewEmployee}></NewEmployee>
           <EmployeesContainer emps = {emps} onRemoval={removeEmp}></EmployeesContainer> 
+=======
+          <Header></Header>
+          <EmployeesContainer emps={emps} onRemoval={removeEmp}></EmployeesContainer>
+>>>>>>> 82409b831504e37229c88abaeaac3580112ff0b0
         </Route>
         <Route exact path="/">
           <Login></Login>
         </Route>
-        <Route path = "/employees/:id">
+        <Route path="/employees/:id">
           <EmployeeInfo></EmployeeInfo>
         </Route>
       </Switch>

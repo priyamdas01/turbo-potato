@@ -2,12 +2,14 @@
 
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-function Employee({emp, onRemoval}){
-    console.log(emp)
+function Employee({ emp, onRemoval }) {
+
     let history = useHistory();
-    function handleClick(){
+
+    function handleClick() {
         history.push(`/employees/${emp.id}`);
     }
+
     return (
         <div>
             <div id="emp-card">

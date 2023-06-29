@@ -205,28 +205,16 @@
       "mantra": "Bending beats breaking"
     },
     {
-      "name": "pikachu",
-      "gender": "Male",
-      "dob": "05/10/1670",
-      "image": "https://randomuser.me/api/portraits/men/83.jpg",
-      "bio": "skjdsjd sdkj sks djmk nsdk h js doosjd sod ssj dshid sds dhihdak jo jaojd ojajjojja odjo  jaod joadj oad",
-      "joining-date": "12/12/2003",
-      "address": "3264 Bethel Church Rd, Woodbridge, VA 22192-4328, United States",
-      "email": "edas@gmu.edu",
-      "mantra": "You only live once!",
+      "name": "",
+      "gender": "",
+      "dob": "",
+      "image": "",
+      "bio": "",
+      "joining-date": "",
+      "address": "",
+      "email": "",
+      "mantra": "",
       "id": 18
-    },
-    {
-      "name": "Priyam ",
-      "gender": "Male",
-      "dob": "05/10/1670",
-      "image": "https://randomuser.me/api/portraits/women/13.jpg",
-      "bio": "ksdjk  dclmsldms",
-      "joining-date": "12/12/2003",
-      "address": "3264 Bethel Church Rd, Woodbridge, VA 22192-4328, United States",
-      "email": "saibajannat@ymail.com",
-      "mantra": "You only live once!",
-      "id": 19
     }
   ],
   "admin": {

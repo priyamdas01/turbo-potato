@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import "../index.css"
+import empImg from "../employee.png" 
 
 function NewEmployee({addNewEmp}){
     const [name, setName] = useState("");
@@ -41,7 +43,9 @@ function NewEmployee({addNewEmp}){
     
     return (
         <div>
+            <img src = {empImg} id = "emp-image"></img>
             <form>
+                <div id = "form-div">
                 <label htmlFor="name">Name: </label>
                 <input type="text" value={name} name="name" placeholder="Enter name" onChange={e=>handleClick(e,setName)} id = "name"required></input>
                 <br></br>
@@ -69,6 +73,8 @@ function NewEmployee({addNewEmp}){
                 <label htmlFor="mantra">Mantra: </label>
                 <input type="text" value={mantra} name="mantra" placeholder="Enter mantra" onChange={e=>handleClick(e,setMantra)} id = "mantra"required></input>
                 <br></br>
+                </div>
+                
                 <button onClick={handleBtnClick}>Submit</button>
             </form>
         </div>

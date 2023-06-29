@@ -14,12 +14,6 @@ function EmployeeInfo() {
             })
     }, [id]);
 
-    const [name, setName] = useState(emp.name);
-
-    const handleClick = () => {
-        console.log(name);
-    }
-
     return (
         <div id = "employee-card">
             

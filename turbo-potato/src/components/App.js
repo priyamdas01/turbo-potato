@@ -20,15 +20,20 @@ function App() {
       .then((r) => r.json())
       .then((data) => setEmps(data))
   }, []);
-  function addNewEmployee(newEmployee){
-    setEmps((emps)=>[...emps, newEmployee])
+  function addNewEmployee(newEmployee) {
+    setEmps((emps) => [...emps, newEmployee])
   }
 
   function removeEmp(id) {
+
+    fetch(`http://localhost:3000/employees/${id}`, {
+      method: "DELETE",
+    })
+
     const newList = emps.filter(l => l.id !== id)
     setEmps(newList);
   }
-  function sortBy(sortedEmps){
+  function sortBy(sortedEmps) {
     console.log(sortedEmps);
     setEmps(sortedEmps);
 

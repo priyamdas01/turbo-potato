@@ -65,8 +65,8 @@ function Header({emps, sortBy}){
             Sort employees based on: 
                 <li><button onClick={e=>sortBy(youngestToOldest)}>Age(Youngest to Oldest)</button></li>
                 <li><button onClick={e=>sortBy(oldestToYoungest)}>Age(Oldest to Youngest)</button></li>
-                <li><button onClick={e=>sortBy(juniorToSenior)}>Age(Junior to Senior)</button></li>
-                <li><button onClick={e=>sortBy(seniorToJunior)}>Age(Semior to Junior)</button></li>
+                <li><button onClick={e=>sortBy(juniorToSenior)}>Experience(Junior to Senior)</button></li>
+                <li><button onClick={e=>sortBy(seniorToJunior)}>Experience(Semior to Junior)</button></li>
                 <li><button onClick={e=>sortBy(allMales)}>Only Males</button></li>
                 <li><button onClick={e=>sortBy(allFemales)}>Only Females</button></li>
             </ul>

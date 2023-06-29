@@ -24,17 +24,30 @@ code {
 
 #emp-card {
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid rgb(243, 242, 203);
+  box-shadow: 2px 2px 1px 2px rgba(225, 220, 220, 0.2);
   border-radius: 10px;
   margin: auto;
   width: 100%;
-  background: linear-gradient(to top, #ebeb6a 0%, #d9dad5 100%);
+  background: linear-gradient(to top, #ebeb6a 0%, #FBFFDC 30%);
+}
+#emp-card:hover{
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -1px, 0px);
+}
+#emp-card button{
+  border-radius: 10px;
+}
+#emp-card button:hover{
+  background-color: rgb(245, 239, 145);
+  box-shadow: rgba(127, 122, 122, 0.22) 0px 19px 43px;
 }
 
 img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 #deleteBtn {
@@ -42,6 +55,7 @@ img {
   cursor: pointer;
   font-weight: bolder;
 }
+
 
 #login-container{
   display: flex;
@@ -97,4 +111,55 @@ img {
 
 #title-logo{
   font-size: 3rem;
+}
+
+#employee-card{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  padding: 8rem;
+  align-items: start;
+  justify-content: center;
+  
+}
+#emp-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#employee-card img{
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin: auto;
+  
+}
+
+
+#emp-name {
+  font-size: 4rem;
+}
+#span-clusters {
+  margin: 2rem auto;
+}
+#span-clusters span{
+  margin: 3rem ;
+}
+#emp-mantra{
+  font-size: 2rem;
+  text-transform: lowercase;
+  font-style: italic;
+}
+#emp-joined{
+  display: flex;
+  justify-content: end;
+}
+#employee-details{
+  background: linear-gradient(to top, #FBFFDC 0%, #ebeb6a 100%);
+  border: 1px solid rgb(210, 203, 203);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(164, 149, 149, 0.2);
 }

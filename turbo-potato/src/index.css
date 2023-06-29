@@ -1,4 +1,5 @@
 body {
+  background-color: #FBFFDC;
   margin: 0;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -27,7 +28,7 @@ code {
   border-radius: 10px;
   margin: auto;
   width: 100%;
-  background: linear-gradient(to top, #d2d2d1 0%, #bab9b9 100%);
+  background: linear-gradient(to top, #ebeb6a 0%, #d9dad5 100%);
 }
 
 img {
@@ -46,12 +47,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid gray;
+  border: 2px solid rgb(211, 205, 205);
   margin: auto;
   width: 60%;
   margin-top: 10% ;
   border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(10, 10, 10, 0.2);
+  /* background-color: #dedbdb; */
 }
+
 
 #login-container img{
   height: 30rem;
@@ -63,6 +67,16 @@ img {
 #login-container form{
   margin: auto;
   text-align: end;
+  border-radius: 10px;
+}
+#login-container input{
+  border-radius: 10px;
+}
+#login-container button{
+  border-radius: 10px;
+}
+#login-container button:hover{
+  background-color: rgb(253, 254, 198);
 }
 
 #logo-name{

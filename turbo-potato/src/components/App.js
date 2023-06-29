@@ -8,6 +8,7 @@ import SearchBar from "./SearchBar";
 import EmployeeInfo from "./EmployeeInfo";
 import NewEmployee from "./NewEmployee";
 
+
 function App() {
 
   const [emps, setEmps] = useState([]);
@@ -42,7 +43,7 @@ function App() {
           <EmployeesContainer emps = {emps} onRemoval={removeEmp}></EmployeesContainer> 
         </Route>
         <Route exact path="/">
-          <Login></Login>
+          <Login className="login-page"></Login>
         </Route>
         <Route path="/employees/:id">
           <EmployeeInfo></EmployeeInfo>

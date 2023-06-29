@@ -41,3 +41,26 @@ img {
   cursor: pointer;
   font-weight: bolder;
 }
+
+#login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  margin: auto;
+  width: 60%;
+  margin-top: 10% ;
+  border-radius: 10px;
+}
+
+#login-container img{
+  height: 30rem;
+  width: 30rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#login-container form{
+  margin: auto;
+  text-align: end;
+}

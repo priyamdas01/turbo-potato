@@ -6,6 +6,7 @@ import EmployeesContainer from "./EmployeesContainer";
 import Login from "./Login";
 import SearchBar from "./SearchBar";
 import EmployeeInfo from "./EmployeeInfo";
+import NewEmployee from "./NewEmployee";
 
 function App() {
 
@@ -16,19 +17,28 @@ function App() {
       .then((r) => r.json())
       .then((data) => setEmps(data))
   }, []);
+  function addNewEmployee(newEmployee){
+    setEmps((emps)=>[...emps, newEmployee])
+  }
 
   function removeEmp(id) {
     const newList = emps.filter(l => l.id !== id)
     setEmps(newList);
   }
+  function sortByAge(sortedEmps){
+    console.log(sortedEmps)
+    setEmps(sortedEmps);
+
+  } 
 
   return (
     <div className="App">
 
       <Switch> 
         <Route exact path="/employees">
-          <Header></Header>
+          <Header emps = {emps} sortByAge={sortByAge}></Header>
           <SearchBar></SearchBar>
+          <NewEmployee addNewEmp = {addNewEmployee}></NewEmployee>
           <EmployeesContainer emps = {emps} onRemoval={removeEmp}></EmployeesContainer> 
         </Route>
         <Route exact path="/">

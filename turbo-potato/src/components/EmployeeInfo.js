@@ -23,18 +23,13 @@ function EmployeeInfo() {
     return (
         <div>
             <img src={emp.image}></img>
-            <div>
-                {/* <span>{name}</span> */}
-                <label>Change Name: </label>
-                <input type="text" onChange={e => {
-                    setName(e.target.value);
-                    console.log(e.target.value)
-                }}>
-                </input>
-                <button onClick={handleClick}>change</button>
-            </div>
-            <div>{emp.gender}</div>
-            <div>{emp.dob}</div>
+            <div>Name: {emp.name}</div>
+            <div>Bio: {emp.bio}</div>
+            <div>Gender: {emp.gender}</div>
+            <div>Date of Birth: {emp.dob}</div>
+            <div>Email: {emp.email}</div>
+            <div>My Mantra: {emp.mantra}</div>
+            <div>Joined on: {emp["joining-date"]}</div>
         </div>
     )
 }

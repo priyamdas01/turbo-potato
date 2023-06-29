@@ -14,6 +14,7 @@ function EmployeesContainer({ emps, onRemoval }) {
 
     return (
         <div>
+            <label>Search: </label>
             <SearchBar setSearch={setSearch}></SearchBar>
             <div id="emps-container">
                 {jsxEmps}

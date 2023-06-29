@@ -42,6 +42,9 @@ function Login(){
                 <img src = {logo}></img>
             </div>
             <form>
+                <div id = "logo-name">
+                    Turbo Potato
+                </div>
                 <label>Email: </label>
                <input type="email" id="email" onChange={handleEmailChange}></input> 
                <br></br>

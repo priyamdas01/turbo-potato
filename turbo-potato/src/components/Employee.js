@@ -16,10 +16,10 @@ function Employee({ emp, onRemoval }) {
                 <img src={emp.image}></img>
                 <h3>{emp.name}</h3>
                 <h4>{emp.dob}</h4>
-                <span id="deleteBtn" onClick={() => { if (window.confirm('Are you sure you want to remove this employee?')) onRemoval(emp.id) }}>X</span>
                 <button onClick={handleClick}>
                     More Info
                 </button>
+                <div id="deleteBtn" onClick={() => { if (window.confirm('Are you sure you want to remove this employee?')) onRemoval(emp.id) }}>X</div>
             </div>
         </div >
     )

@@ -25,8 +25,8 @@ function App() {
     const newList = emps.filter(l => l.id !== id)
     setEmps(newList);
   }
-  function sortByAge(sortedEmps){
-    console.log(sortedEmps)
+  function sortBy(sortedEmps){
+    console.log(sortedEmps);
     setEmps(sortedEmps);
 
   } 
@@ -36,15 +36,10 @@ function App() {
 
       <Switch>
         <Route exact path="/employees">
-<<<<<<< HEAD
-          <Header emps = {emps} sortByAge={sortByAge}></Header>
-          <SearchBar></SearchBar>
+          <Header emps = {emps} sortBy={sortBy}></Header>
+          {/* <SearchBar></SearchBar> */}
           <NewEmployee addNewEmp = {addNewEmployee}></NewEmployee>
           <EmployeesContainer emps = {emps} onRemoval={removeEmp}></EmployeesContainer> 
-=======
-          <Header></Header>
-          <EmployeesContainer emps={emps} onRemoval={removeEmp}></EmployeesContainer>
->>>>>>> 82409b831504e37229c88abaeaac3580112ff0b0
         </Route>
         <Route exact path="/">
           <Login></Login>

@@ -21,15 +21,29 @@ function EmployeeInfo() {
     }
 
     return (
-        <div>
-            <img src={emp.image}></img>
-            <div>Name: {emp.name}</div>
-            <div>Bio: {emp.bio}</div>
-            <div>Gender: {emp.gender}</div>
-            <div>Date of Birth: {emp.dob}</div>
-            <div>Email: {emp.email}</div>
-            <div>My Mantra: {emp.mantra}</div>
-            <div>Joined on: {emp["joining-date"]}</div>
+        <div id = "employee-card">
+            
+            <section id = "employee-details">
+                <div id = "emp-info">
+                <div id = "emp-name">{emp.name}</div>
+                <div id = "employee-pic">
+                <img src={emp.image}></img>
+                </div>
+                
+            </div>
+                <div id = "span-clusters">
+                <span id = "emp-dob">{emp.dob}</span>
+                    <span id = "emp-gender">{emp.gender}</span>
+                    <span id = "emp-email">{emp.email}</span>
+                </div>
+                <div id = "emp-bio">{emp.bio}</div>
+                <div id = "emp-mantra">"{emp.mantra}"</div>
+                <div id = "emp-joined">Joined on: {emp["joining-date"]}</div>
+            </section>
+            
+            
+            
+            
         </div>
     )
 }

@@ -98,3 +98,54 @@ img {
 #title-logo{
   font-size: 3rem;
 }
+
+#employee-card{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  padding: 8rem;
+  align-items: start;
+  justify-content: center;
+  
+}
+#emp-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#employee-card img{
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin: auto;
+  
+}
+
+
+#emp-name {
+  font-size: 4rem;
+}
+#span-clusters {
+  margin: 2rem auto;
+}
+#span-clusters span{
+  margin: 3rem ;
+}
+#emp-mantra{
+  font-size: 2rem;
+  text-transform: lowercase;
+  font-style: italic;
+}
+#emp-joined{
+  display: flex;
+  justify-content: end;
+}
+#employee-details{
+  background: linear-gradient(to top, #FBFFDC 0%, #ebeb6a 100%);
+  border: 1px solid rgb(210, 203, 203);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(164, 149, 149, 0.2);
+}

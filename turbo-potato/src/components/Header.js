@@ -62,18 +62,13 @@ function Header({emps, sortBy}){
             </div>
 
             <ul>
-                <li><button onClick={e=>sortBy(youngestToOldest)}>Age(Youngest to Oldest)</button></li>
-                <li><button onClick={e=>sortBy(oldestToYoungest)}>Age(Oldest to Youngest)</button></li>
-                <li><button onClick={e=>sortBy(juniorToSenior)}>Experience(Junior to Senior)</button></li>
-                <li><button onClick={e=>sortBy(seniorToJunior)}>Experience(Semior to Junior)</button></li>
-                <li><button onClick={e=>sortBy(allMales)}>Male employees</button></li>
-                <li><button onClick={e=>sortBy(allFemales)}>Female employees</button></li>
+                <li><button onClick={e=>sortBy(youngestToOldest)}>Age (Youngest -&gt; Oldest)</button></li>
+                <li><button onClick={e=>sortBy(oldestToYoungest)}>Age (Oldest -&gt; Youngest)</button></li>
+                <li><button onClick={e=>sortBy(juniorToSenior)}>Experience (Junior -&gt; Senior)</button></li>
+                <li><button onClick={e=>sortBy(seniorToJunior)}>Experience (Senior -&gt; Junior)</button></li>
+                <li><button onClick={e=>sortBy(allMales)}>Male Employees</button></li>
+                <li><button onClick={e=>sortBy(allFemales)}>Female Employees</button></li>
             </ul>
-            
-            
-            
-            
-            
              
         </nav>
     );

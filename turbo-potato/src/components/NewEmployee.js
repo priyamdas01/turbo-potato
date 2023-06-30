@@ -43,7 +43,7 @@ function NewEmployee({addNewEmp}){
     }
     
     return (
-        <div>
+        <div id = "newEmp">
             <img src = {empImg} id = "emp-image"></img>
             <form>
                 <div id = "form-div">
@@ -69,7 +69,7 @@ function NewEmployee({addNewEmp}){
                 <input type="text" value={address} name="address" placeholder="Enter address" onChange={e=>handleClick(e,setAddress)} id = "address"required></input>
                 <br></br>
                 <label htmlFor="email">Email: </label>
-                <input type="email" value={email} name="email" placeholder="Enter emal" onChange={e=>handleClick(e,setEmail)} id = "email"required></input>
+                <input type="email" value={email} name="email" placeholder="Enter email" onChange={e=>handleClick(e,setEmail)} id = "email"required></input>
                 <br></br>
                 <label htmlFor="mantra">Mantra: </label>
                 <input type="text" value={mantra} name="mantra" placeholder="Enter mantra" onChange={e=>handleClick(e,setMantra)} id = "mantra"required></input>

@@ -176,6 +176,9 @@ img {
   flex-direction: row;
   justify-content: space-around;
 }
+#newEmp button:hover{
+  background-color: rgb(169, 163, 163);
+}
 
 #employee-card img{
   width: 120px;

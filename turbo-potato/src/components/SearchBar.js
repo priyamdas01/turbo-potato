@@ -1,7 +1,8 @@
 function SearchBar({ setSearch }) {
 
     return (
-        <div>
+        <div id = "search-here">
+            <label>Search employees: </label>
             <input
                 onChange={e => setSearch(e.target.value)}
                 type="text"

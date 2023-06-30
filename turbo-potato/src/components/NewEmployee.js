@@ -33,12 +33,13 @@ function NewEmployee({addNewEmp}){
     }
     
     const handleBtnClick = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
             fetch("http://localhost:3000/employees", requestOptions)
             .then(r=>r.json())
             .then(data=>{
                 addNewEmp(data);
             })
+        // e.target.value = "";
     }
     
     return (

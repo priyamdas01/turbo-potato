@@ -51,8 +51,11 @@ function App() {
       <Switch>
         <Route exact path="/employees">
           <Header emps = {emps} sortBy={sortBy}></Header>
+          <div id = "container">
+            <button onClick={handleClick} id = "add-emp-btn">Register New Employee</button> 
+
+          </div>
           
-          <button onClick={handleClick}>Register New Employee</button>
           <EmployeesContainer emps = {emps} onRemoval={removeEmp}></EmployeesContainer> 
         </Route>
         <Route exact path="/">

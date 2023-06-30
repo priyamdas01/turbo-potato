@@ -203,18 +203,6 @@
       "address": "4512 First Street",
       "email": "Irene.Bates@example.com",
       "mantra": "Bending beats breaking"
-    },
-    {
-      "name": "",
-      "gender": "",
-      "dob": "",
-      "image": "",
-      "bio": "",
-      "joining-date": "",
-      "address": "",
-      "email": "",
-      "mantra": "",
-      "id": 18
     }
   ],
   "admin": {

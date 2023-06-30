@@ -1,4 +1,18 @@
-function Header(){
+import React, { useState } from 'react';
+
+function Header(updateSearch){
+
+    // const [query, setQuery] = useState('');
+
+    // const handleInputChange = (event) => {
+    //   const newQuery = event.target.value;
+    //   setQuery(newQuery);
+    // };
+
+    // const handleFormSubmit = (event) => {
+    //     event.preventDefault();
+    //     onFilter(query);
+    // }    
 
     return (
         <>
@@ -31,8 +45,8 @@ function Header(){
                     <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+                <form class="form-inline my-2 my-lg-0" >
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onChange = {(e) => updateSearch(e.target.value)}></input>
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>

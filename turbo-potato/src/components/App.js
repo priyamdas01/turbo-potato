@@ -6,11 +6,14 @@ import EmployeesContainer from "./EmployeesContainer";
 import Login from "./Login";
 import EmployeeInfo from "./EmployeeInfo";
 import NewEmployee from "./NewEmployee";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import "../index.css"
 
 
 function App() {
 
   const [emps, setEmps] = useState([]);
+  let history = useHistory();
 
   useEffect(() => {
     fetch("http://localhost:3000/employees")
@@ -33,6 +36,13 @@ function App() {
   function sortBy(sortedEmps) {
     console.log(sortedEmps);
     setEmps(sortedEmps);
+
+  }
+  const handleClick = ()=>{
+    history.push("/form");
+  }
+  const handleHomePageClick = ()=>{
+    history.push("/employees")
   }
 
   return (
@@ -40,15 +50,29 @@ function App() {
 
       <Switch>
         <Route exact path="/employees">
-          <Header emps={emps} sortBy={sortBy}></Header>
-          <NewEmployee addNewEmp={addNewEmployee}></NewEmployee>
-          <EmployeesContainer emps={emps} onRemoval={removeEmp}></EmployeesContainer>
+          <Header emps = {emps} sortBy={sortBy}></Header>
+          <div id = "container">
+            <button onClick={handleClick} id = "add-emp-btn">Register New Employee</button> 
+
+          </div>
+          
+          <EmployeesContainer emps = {emps} onRemoval={removeEmp}></EmployeesContainer> 
         </Route>
         <Route exact path="/">
           <Login className="login-page"></Login>
         </Route>
         <Route path="/employees/:id">
           <EmployeeInfo></EmployeeInfo>
+        </Route>
+        <Route path = "/form" >
+          <div id = "new-form">
+            <NewEmployee addNewEmp = {addNewEmployee}></NewEmployee>
+            <div id = "form-home-page-btn">
+              <button onClick={handleHomePageClick}>Home Page</button>  
+
+            </div>
+
+          </div>
         </Route>
       </Switch>
     </div>

@@ -1,108 +1,236 @@
 {
-    "employees": [
-        {   "id": 1,
-            "name": "Muhammad Ishaq",
-            "gender": "Male",
-            "dob": "10/05/1985",
-            "image":"https://randomuser.me/api/portraits/men/83.jpg"
-        },
-        {   "id": 2,
-            "name": "Nicole Scott",
-            "gender": "Female",
-            "dob": "11/3/1981",
-            "image":"https://randomuser.me/api/portraits/women/60.jpg"
-        },
-        {   "id": 3,
-            "name": "Heidi Reed",
-            "gender": "Female",
-            "dob": "8/5/1980",
-            "image":"https://randomuser.me/api/portraits/women/13.jpg"
-        },
-        {   "id": 4,
-            "name": "Marshall Dunn",
-            "gender": "Male",
-            "dob": "10/6/1984",
-            "image":"https://randomuser.me/api/portraits/men/12.jpg"
-        },
-        {   "id": 5,
-            "name": "Randy Fisher",
-            "gender": "Male",
-            "dob": "8/2/1973",
-            "image":"https://randomuser.me/api/portraits/men/19.jpg"
-        },
-        {   "id": 6,
-            "name": "Ralph Pierce",
-            "gender": "Male",
-            "dob": "3/1/1990",
-            "image":"https://randomuser.me/api/portraits/men/67.jpg"
-        },
-        {   "id": 7,
-            "name": "Ronnie Wheeler",
-            "gender": "Male",
-            "dob": "8/4/1986",
-            "image":"https://randomuser.me/api/portraits/men/75.jpg"
-        },
-        {   "id": 8,
-            "name": "Edward Craig",
-            "gender": "Male",
-            "dob": "9/4/1984",
-            "image":"https://randomuser.me/api/portraits/men/11.jpg"
-        },
-        {   "id": 9,
-            "name": "Nicholas Peterson",
-            "gender": "Male",
-            "dob": "7/3/1976",
-            "image":"https://randomuser.me/api/portraits/men/95.jpg"
-        },
-        {   "id": 10,
-            "name": "Bob Perez",
-            "gender": "Male",
-            "dob": "3/2/1987",
-            "image":"https://randomuser.me/api/portraits/men/74.jpg"
-        },
-        {   "id": 11,
-            "name": "April Rhodes",
-            "gender": "Female",
-            "dob": "2/5/1990",
-            "image":"https://randomuser.me/api/portraits/women/27.jpg"
-        },
-        {   "id": 12,
-            "name": "Jimmie Hill",
-            "gender": "Male",
-            "dob": "7/6/1950",
-            "image":"https://randomuser.me/api/portraits/men/82.jpg"
-        },
-        {   "id": 13,
-            "name": "Brandy Morris",
-            "gender": "Female",
-            "dob": "12/1/1945",
-            "image":"https://randomuser.me/api/portraits/women/50.jpg"
-        },
-        {   "id": 14,
-            "name": "Shawn Reid",
-            "gender": "Male",
-            "dob": "6/1/1955",
-            "image":"https://randomuser.me/api/portraits/men/26.jpg"
-        },
-        {   "id": 15,
-            "name": "Rita Bell",
-            "gender": "Female",
-            "dob": "1/2/1983",
-            "image":"https://randomuser.me/api/portraits/women/45.jpg"
-        },
-        {   "id": 16,
-            "name": "Hazel Pena",
-            "gender": "Female",
-            "dob": "8/3/1982",
-            "image":"https://randomuser.me/api/portraits/women/66.jpg"
-        },
-        {   "id": 17,
-            "name": "Irene Bates",
-            "gender": "Female",
-            "dob": "7/1/1971",
-            "image":"https://randomuser.me/api/portraits/women/91.jpg"
-        }
-
-    ]
-    
+  "employees": [
+    {
+      "id": 1,
+      "name": "Muhammad Ishaq",
+      "gender": "Male",
+      "dob": "10/05/1985",
+      "image": "https://randomuser.me/api/portraits/men/83.jpg",
+      "bio": "Muhammad Ishaq is an Administrative Assistant with eight years of experience working alongside the executive team of a Fortune 500 company. Mary specializes in administrative technology and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps. Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters. In her free time, Mary likes to hike, crochet and play video games with her grandson.",
+      "joining-date": "15/09/2001",
+      "address": "9844 Smokey Ln",
+      "email": "muhammad.ishaq@example.com",
+      "mantra": "You always make sure everyone in the room is heard—no one feels lonely or left out when you are around"
+    },
+    {
+      "id": 2,
+      "name": "Nicole Scott",
+      "gender": "Female",
+      "dob": "11/03/1981",
+      "image": "https://randomuser.me/api/portraits/women/60.jpg",
+      "bio": "My name is Nicole Scott and I am a Junior Web Developer for Oswald Technologies. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Oswald Tech. I graduated from the California Institute of Technology in 2016 with a bachelor's degree in software development. While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills.",
+      "joining-date": "10/09/2005",
+      "address": "5008 Nowlin Rd",
+      "email": "nicole.scott@example.com",
+      "mantra": "You’re the light of my life."
+    },
+    {
+      "id": 3,
+      "name": "Heidi Reed",
+      "gender": "Female",
+      "dob": "8/05/1980",
+      "image": "https://randomuser.me/api/portraits/women/13.jpg",
+      "bio": "Heidi Reed is an award-winning freelance writer who specializes in finance topics. With over ten years of experience, she has been published in the Wall Street Journal, the New York Times and numerous trade journals, including the Harvard Business Review. She has also appeared as a financial expert on The Today Show and Good Morning, America. Jaime enjoys bringing sensible budgeting tips to people of all income levels. She currently lives in Portland, Oregon, and is available for freelance assignments and speaking engagements.",
+      "joining-date": "18/03/1996",
+      "address": "7113 Poplar Dr",
+      "email": "heidi.reed@example.com",
+      "mantra": "I would rather die of passion than of boredom."
+    },
+    {
+      "id": 4,
+      "name": "Marshall Dunn",
+      "gender": "Male",
+      "dob": "10/06/1984",
+      "image": "https://randomuser.me/api/portraits/men/12.jpg",
+      "bio": "Marshall Dunn is an Administrative Assistant with eight years of experience working alongside the executive team of a Fortune 500 company. Mary specializes in administrative technology and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps. Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters. In her free time, Mary likes to hike, crochet and play video games with her grandson.",
+      "joining-date": "04/04/2002",
+      "address": "9184 Woodland St",
+      "email": "muhammad.ishaq@example.com",
+      "mantra": "Remember: you are not what you own. Storing all those books doesn’t make you any smarter; it just makes your life more cluttered"
+    },
+    {
+      "id": 5,
+      "name": "Randy Fisher",
+      "gender": "Male",
+      "dob": "8/02/1973",
+      "image": "https://randomuser.me/api/portraits/men/19.jpg",
+      "bio": "My name is Randy Fisher and I am a Junior Web Developer for Oswald Technologies. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Oswald Tech. I graduated from the California Institute of Technology in 2016 with a bachelor's degree in software development. While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills.",
+      "joining-date": "11/11/2020",
+      "address": "179 Eason Rd",
+      "email": "Randy.Fisher@example.com",
+      "mantra": "One often calms ones grief by recounting it."
+    },
+    {
+      "id": 6,
+      "name": "Ralph Pierce",
+      "gender": "Male",
+      "dob": "3/01/1990",
+      "image": "https://randomuser.me/api/portraits/men/67.jpg",
+      "bio": "Ralph Pierce is an award-winning freelance writer who specializes in finance topics. With over ten years of experience, she has been published in the Wall Street Journal, the New York Times and numerous trade journals, including the Harvard Business Review. She has also appeared as a financial expert on The Today Show and Good Morning, America. Jaime enjoys bringing sensible budgeting tips to people of all income levels. She currently lives in Portland, Oregon, and is available for freelance assignments and speaking engagements.",
+      "joining-date": "2/02/2023",
+      "address": "6259 Dane St",
+      "email": "Ralph.Pierce@example.com",
+      "mantra": "Everything in moderation, including moderation"
+    },
+    {
+      "id": 7,
+      "name": "Ronnie Wheeler",
+      "gender": "Male",
+      "dob": "8/04/1986",
+      "image": "https://randomuser.me/api/portraits/men/75.jpg",
+      "bio": "Ronnie Wheeler is an Administrative Assistant with eight years of experience working alongside the executive team of a Fortune 500 company. Mary specializes in administrative technology and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps. Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters. In her free time, Mary likes to hike, crochet and play video games with her grandson.",
+      "joining-date": "17/02/2015",
+      "address": "6107 Dogwood Ave",
+      "email": "Ronnie.Wheeler@example.com",
+      "mantra": "What you have + Gratitude = Enough"
+    },
+    {
+      "id": 8,
+      "name": "Edward Craig",
+      "gender": "Male",
+      "dob": "9/04/1984",
+      "image": "https://randomuser.me/api/portraits/men/11.jpg",
+      "bio": "My name is Edward Craig and I am a Junior Web Developer for Oswald Technologies. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Oswald Tech. I graduated from the California Institute of Technology in 2016 with a bachelor's degree in software development. While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills.",
+      "joining-date": "7/07/2010",
+      "address": "4283 W Sherman Dr",
+      "email": "Edward.Craig@example.com",
+      "mantra": "Believe in yourself. Stay in your own lane. There’s only one you"
+    },
+    {
+      "id": 9,
+      "name": "Nicholas Peterson",
+      "gender": "Male",
+      "dob": "7/03/1976",
+      "image": "https://randomuser.me/api/portraits/men/95.jpg",
+      "bio": "Nicholas Petersonis an award-winning freelance writer who specializes in finance topics. With over ten years of experience, she has been published in the Wall Street Journal, the New York Times and numerous trade journals, including the Harvard Business Review. She has also appeared as a financial expert on The Today Show and Good Morning, America. Jaime enjoys bringing sensible budgeting tips to people of all income levels. She currently lives in Portland, Oregon, and is available for freelance assignments and speaking engagements.",
+      "joining-date": "24/02/1990",
+      "address": "6228 Homestead Rd",
+      "email": "Nicholas.Peterson@example.com",
+      "mantra": "You’re an original, an individual, a masterpiece. Celebrate that; don’t let your uniqueness make you shy. Don’t be someone other than the wonder you are. Every star is important to the sky."
+    },
+    {
+      "id": 10,
+      "name": "Bob Perez",
+      "gender": "Male",
+      "dob": "3/02/1987",
+      "image": "https://randomuser.me/api/portraits/men/74.jpg",
+      "bio": "Bob Perez is an Administrative Assistant with eight years of experience working alongside the executive team of a Fortune 500 company. Mary specializes in administrative technology and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps. Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters. In her free time, Mary likes to hike, crochet and play video games with her grandson.",
+      "joining-date": "1/01/2003",
+      "address": "193 Royal Ln",
+      "email": "Bob.Perez@example.com",
+      "mantra": "Don't let people disrespect you. My mom says don't open the door to the devil. Surround yourself with positive people."
+    },
+    {
+      "id": 11,
+      "name": "April Rhodes",
+      "gender": "Female",
+      "dob": "2/05/1990",
+      "image": "https://randomuser.me/api/portraits/women/27.jpg",
+      "bio": "My name is April Rhodes and I am a Junior Web Developer for Oswald Technologies. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Oswald Tech. I graduated from the California Institute of Technology in 2016 with a bachelor's degree in software development. While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills.",
+      "joining-date": "2/02/2019",
+      "address": "2884 E Sandy Lake Rd",
+      "email": "April.iRhodesshaq@example.com",
+      "mantra": "If being a kid is about learning how to live, then being a grown-up is about learning how to die."
+    },
+    {
+      "id": 12,
+      "name": "Jimmie Hill",
+      "gender": "Male",
+      "dob": "7/06/1950",
+      "image": "https://randomuser.me/api/portraits/men/82.jpg",
+      "bio": "Jimmie Hill is an award-winning freelance writer who specializes in finance topics. With over ten years of experience, she has been published in the Wall Street Journal, the New York Times and numerous trade journals, including the Harvard Business Review. She has also appeared as a financial expert on The Today Show and Good Morning, America. Jaime enjoys bringing sensible budgeting tips to people of all income levels. She currently lives in Portland, Oregon, and is available for freelance assignments and speaking engagements.",
+      "joining-date": "1/01/1990",
+      "address": "5177 Spring St",
+      "email": "Jimmie.Hill@example.com",
+      "mantra": "We buy things we don’t need, with money we don’t have, to impress people we don’t like"
+    },
+    {
+      "id": 13,
+      "name": "Brandy Morris",
+      "gender": "Female",
+      "dob": "12/01/1945",
+      "image": "https://randomuser.me/api/portraits/women/50.jpg",
+      "bio": "Brandy Morris is an Administrative Assistant with eight years of experience working alongside the executive team of a Fortune 500 company. Mary specializes in administrative technology and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps. Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters. In her free time, Mary likes to hike, crochet and play video games with her grandson.",
+      "joining-date": "25/02/1980",
+      "address": "8181 Marsh Ln",
+      "email": "Brandy.Morris@example.com",
+      "mantra": "If being a kid is about learning how to live, then being a grown-up is about learning how to die."
+    },
+    {
+      "id": 14,
+      "name": "Shawn Reid",
+      "gender": "Male",
+      "dob": "6/01/1955",
+      "image": "https://randomuser.me/api/portraits/men/26.jpg",
+      "bio": "My name is Shawn Reid and I am a Junior Web Developer for Oswald Technologies. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Oswald Tech. I graduated from the California Institute of Technology in 2016 with a bachelor's degree in software development. While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills.",
+      "joining-date": "1/01/2000",
+      "address": "9524 tate Ln",
+      "email": "Shawn.Reid@example.com",
+      "mantra": "Someone is sitting in the shade today because someone planted a tree a long time ago"
+    },
+    {
+      "id": 15,
+      "name": "Rita Bell",
+      "gender": "Female",
+      "dob": "1/02/1983",
+      "image": "https://randomuser.me/api/portraits/women/45.jpg",
+      "bio": "Rita Bell is an award-winning freelance writer who specializes in finance topics. With over ten years of experience, she has been published in the Wall Street Journal, the New York Times and numerous trade journals, including the Harvard Business Review. She has also appeared as a financial expert on The Today Show and Good Morning, America. Jaime enjoys bringing sensible budgeting tips to people of all income levels. She currently lives in Portland, Oregon, and is available for freelance assignments and speaking engagements.",
+      "joining-date": "5/05/1999",
+      "address": "6326 Hunters Creek Dr",
+      "email": "Rita.Bell@example.com",
+      "mantra": "You're more helpful than you realize."
+    },
+    {
+      "id": 16,
+      "name": "Hazel Pena",
+      "gender": "Female",
+      "dob": "8/03/1982",
+      "image": "https://randomuser.me/api/portraits/women/66.jpg",
+      "bio": "Hazel Pena is an Administrative Assistant with eight years of experience working alongside the executive team of a Fortune 500 company. Mary specializes in administrative technology and is responsible for educating other employees on using progressive systems and applications, including accounting software, mass communication procedures and organizational apps. Mary is a powerful force in the workplace and uses her positive attitude and tireless energy to encourage others to work hard and succeed. Mary is inspired daily by her husband and their two daughters. In her free time, Mary likes to hike, crochet and play video games with her grandson.",
+      "joining-date": "3/03/2002",
+      "address": "6326 Hunters Creek Dr",
+      "email": "Hazel.Pena@example.com",
+      "mantra": "Dust is a protective coating for fine furniture"
+    },
+    {
+      "id": 17,
+      "name": "Irene Bates",
+      "gender": "Female",
+      "dob": "7/01/1971",
+      "image": "https://randomuser.me/api/portraits/women/91.jpg",
+      "bio": "My name is Irene Bates and I am a Junior Web Developer for Oswald Technologies. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day at Oswald Tech. I graduated from the California Institute of Technology in 2016 with a bachelor's degree in software development. While in school, I earned the 2015 Edmund Gains Award for my exemplary academic performance and leadership skills.",
+      "joining-date": "1/01/2001",
+      "address": "4512 First Street",
+      "email": "Irene.Bates@example.com",
+      "mantra": "Bending beats breaking"
+    },
+    {
+      "name": "pikachu",
+      "gender": "Male",
+      "dob": "05/10/1670",
+      "image": "https://randomuser.me/api/portraits/men/83.jpg",
+      "bio": "skjdsjd sdkj sks djmk nsdk h js doosjd sod ssj dshid sds dhihdak jo jaojd ojajjojja odjo  jaod joadj oad",
+      "joining-date": "12/12/2003",
+      "address": "3264 Bethel Church Rd, Woodbridge, VA 22192-4328, United States",
+      "email": "edas@gmu.edu",
+      "mantra": "You only live once!",
+      "id": 18
+    },
+    {
+      "name": "Priyam ",
+      "gender": "Male",
+      "dob": "05/10/1670",
+      "image": "https://randomuser.me/api/portraits/women/13.jpg",
+      "bio": "ksdjk  dclmsldms",
+      "joining-date": "12/12/2003",
+      "address": "3264 Bethel Church Rd, Woodbridge, VA 22192-4328, United States",
+      "email": "saibajannat@ymail.com",
+      "mantra": "You only live once!",
+      "id": 19
+    }
+  ],
+  "admin": {
+    "email": "domidas01@gmail.com",
+    "pass": "1234"
+  }
 }

@@ -1,43 +1,56 @@
-import React, {useEffect, useState, } from "react";
-import Header from "./Header";
-import Results from "./Results";
-// import LoginPage from "./LoginPage";
+import React, { useEffect, useState, } from "react";
+import { Switch, Route } from "react-router-dom";
 
+import Header from "./Header";
 import EmployeesContainer from "./EmployeesContainer";
+import Login from "./Login";
+import EmployeeInfo from "./EmployeeInfo";
+import NewEmployee from "./NewEmployee";
+
 
 function App() {
+
   const [emps, setEmps] = useState([]);
-  useEffect(()=>{
+
+  useEffect(() => {
     fetch("http://localhost:3000/employees")
-    .then((r) => r.json())
-    .then((data) => setEmps(data))
+      .then((r) => r.json())
+      .then((data) => setEmps(data))
   }, []);
-
-  const [search, setSearch] = useState('');
-
-  const updateSearch = (newSearch) => {
-    setSearch(newSearch);
+  function addNewEmployee(newEmployee) {
+    setEmps((emps) => [...emps, newEmployee])
   }
 
-  console.log('test', search);
+  function removeEmp(id) {
 
- 
-  // const [filteredData, setFilteredData] = useState(emps);
+    fetch(`http://localhost:3000/employees/${id}`, {
+      method: "DELETE",
+    })
 
-  // const handleFilter = (query) => {
-  //   const filtered = emps.filter((item) =>
-  //     item.name.toLowerCase().includes(query.toLowerCase())
-  //   );
-  //   setFilteredData(filtered);
-  // };
-  
+    const newList = emps.filter(l => l.id !== id)
+    setEmps(newList);
+  }
+  function sortBy(sortedEmps) {
+    console.log(sortedEmps);
+    setEmps(sortedEmps);
+  }
+
   return (
     <div className="App">
-      <Header updateSearch = {updateSearch}/>
-      {/* <LoginPage /> */}
-      <EmployeesContainer emps = {emps}></EmployeesContainer>
-      {/* <Header onFilter={handleFilter} />
-      <Results filteredData={filteredData} /> */}
+
+      <Switch>
+        <Route exact path="/employees">
+          <Header emps={emps} sortBy={sortBy}></Header>
+          <NewEmployee addNewEmp={addNewEmployee}></NewEmployee>
+          <EmployeesContainer emps={emps} onRemoval={removeEmp}></EmployeesContainer>
+        </Route>
+        <Route exact path="/">
+          <Login className="login-page"></Login>
+        </Route>
+        <Route path="/employees/:id">
+          <EmployeeInfo></EmployeeInfo>
+        </Route>
+      </Switch>
     </div>
   );
 }

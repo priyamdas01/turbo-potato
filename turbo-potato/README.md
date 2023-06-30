@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Welcome to Turbo Potato!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Turbo Potato is a free application where a company Admin can access their employees information. It can add or remove employees, search employee by name, edit or delete employees information.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Only let users login with admin credentials
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Let you filer out the the employees list by their Age, Experience, and Gender.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- You can also add or remove employee
 
-### `npm test`
+- Let you click on the employee to see their details
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- You can also search Emplyee by their name.
 
-### `npm run build`
+- It lets you easily see your employee details, make changes, add or remove any employees.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### - Login:
+![Alt text](public/Login.gif)
+- To login to the website to access the employee data, first make sure you have the Admin credentials. Then, you simply type in the email address, and password and click submit to Login.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### - Fileter out your Employee
+![Alt text](public/Filter.gif)
+- To filter out Employee you can simply click on how you want to filter it out by the given options. For example, you can click on Age (Youngest to Oldest).
 
-### `npm run eject`
+### - Create a new Employee
+![Alt text](public/Form.gif)
+- To create a new Employee, all you gotta do is fill out the form and hit that submit button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### - Search Employee by Name
+![Alt text](public/Search.gif)
+- To search employee by name, you simply click on the search field and type in the name you want to search.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### - Delete/Fire Employee
+![Alt text](public/Delete.gif)
+- To delete/fire an employee, you simply click on the 'X' button under their name and you will never see them again.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### - See Employee Info
+![Alt text](public/Info.gif)
+- To see selected employee information, click on 'More Info' button below the employee you want to see.
